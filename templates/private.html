@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Private Area{% endblock %}
+
+{% block content %}
+<main role="main" class="container">
+    <h1>Welcome to the private area</h1>
+    <p class="mt-4">Your user info: </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">OneLogin ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ user.get("sub") }}</td>
+          <td>{{ user.get("name") }}</td>
+          <td>{{ user.get("email") }}</td>
+        </tr>
+      </tbody>
+    </table>
+</main>
+{% endblock %}

@@ -1,0 +1,12 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.bg-custom-pink {
+  background-color: #f8e3ec;
+  color: #000;
+}
